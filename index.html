@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-sans: 'Inter', sans-serif;
+
+      --color-bg: #111827;
+      --color-bg-alt: #1F2937;
+      --color-border: #374151;
+      --color-text: #E5E7EB;
+      --color-text-alt: #9CA3AF;
+      --color-primary: #3B82F6;
+      --color-primary-hover: #2563EB;
+
+      --spacing-1: 0.25rem;
+      --spacing-2: 0.5rem;
+      --spacing-4: 1rem;
+      --spacing-8: 2rem;
+      --spacing-12: 3rem;
+      --spacing-16: 4rem;
+    }
+
+    /* Reset and base styles */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-size: 16px;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      text-rendering: optimizeSpeed;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: var(--spacing-4);
+      color: var(--color-text);
+    }
+
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    h3 { font-size: 1.5rem; }
+
+    p {
+      margin-bottom: var(--spacing-4);
+      color: var(--color-text-alt);
+      max-width: 65ch;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+    }
+
+    a:hover {
+      color: var(--color-primary-hover);
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 var(--spacing-8);
+    }
+
+    .section {
+      padding: var(--spacing-16) 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section:last-of-type {
+        border-bottom: none;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: var(--spacing-12);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="container" style="padding-top: var(--spacing-8); padding-bottom: var(--spacing-8); display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border);">
+    <a href="#" style="font-size: 1.25rem; font-weight: 700;">Aditya Pratama</a>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: var(--spacing-8);">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section container" style="display: flex; align-items: center; gap: var(--spacing-12); min-height: 80vh;">
+        <div style="flex: 2;">
+            <h1 style="font-size: 3.5rem; margin-bottom: var(--spacing-8);">DevOps Engineer & SRE</h1>
+            <p style="font-size: 1.25rem; color: var(--color-text); margin-bottom: var(--spacing-8);">
+                Hi, I'm Aditya Pratama. I build and maintain scalable, reliable, and efficient infrastructure, bridging the gap between development and operations through automation and cloud-native solutions.
+            </p>
+            <a href="#contact" style="display: inline-block; background-color: var(--color-primary); color: var(--color-text); padding: var(--spacing-4) var(--spacing-8); border-radius: 8px; text-decoration: none; font-weight: 700; transition: background-color 0.2s ease;">
+                Get in Touch
+            </a>
+        </div>
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <!-- Placeholder for a professional headshot. Replace the src with your image URL. -->
+            <img src="https://via.placeholder.com/400" alt="Aditya Pratama" style="border-radius: 50%; max-width: 100%; height: auto; max-height: 400px; object-fit: cover;">
+        </div>
+    </section>
+
+    <section id="skills" class="section container">
+        <h2 class="section-title">My Technical Toolbox</h2>
+        <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-8);">
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">Cloud Platforms</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>AWS (EC2, S3, RDS, EKS, Lambda)</li>
+                    <li>Azure (VMs, Blob Storage, AKS)</li>
+                    <li>Google Cloud Platform (GCP)</li>
+                </ul>
+            </div>
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">Infrastructure as Code</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>Terraform</li>
+                    <li>Ansible</li>
+                    <li>AWS CloudFormation</li>
+                </ul>
+            </div>
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">CI/CD & Automation</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>Jenkins</li>
+                    <li>GitLab CI</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">Containers & Orchestration</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Helm</li>
+                </ul>
+            </div>
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">Monitoring & Observability</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>Prometheus & Grafana</li>
+                    <li>Datadog</li>
+                    <li>ELK Stack</li>
+                </ul>
+            </div>
+
+            <div class="skill-category" style="background-color: var(--color-bg-alt); padding: var(--spacing-8); border-radius: 8px;">
+                <h3 style="border-bottom: 2px solid var(--color-primary); padding-bottom: var(--spacing-2); margin-bottom: var(--spacing-4);">Scripting Languages</h3>
+                <ul style="list-style: none; color: var(--color-text-alt);">
+                    <li>Python</li>
+                    <li>Go</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="filter-buttons" style="text-align: center; margin-bottom: var(--spacing-8);">
+            <button class="filter-btn active" data-filter="all" style="background-color: var(--color-primary); color: var(--color-text); border: none; padding: var(--spacing-2) var(--spacing-4); border-radius: 8px; cursor: pointer; margin: 0 var(--spacing-1); transition: background-color 0.2s ease;">All</button>
+            <button class="filter-btn" data-filter="cicd" style="background-color: var(--color-bg-alt); color: var(--color-text); border: 1px solid var(--color-border); padding: var(--spacing-2) var(--spacing-4); border-radius: 8px; cursor: pointer; margin: 0 var(--spacing-1); transition: background-color 0.2s ease;">CI/CD</button>
+            <button class="filter-btn" data-filter="iac" style="background-color: var(--color-bg-alt); color: var(--color-text); border: 1px solid var(--color-border); padding: var(--spacing-2) var(--spacing-4); border-radius: 8px; cursor: pointer; margin: 0 var(--spacing-1); transition: background-color 0.2s ease;">IaC</button>
+            <button class="filter-btn" data-filter="monitoring" style="background-color: var(--color-bg-alt); color: var(--color-text); border: 1px solid var(--color-border); padding: var(--spacing-2) var(--spacing-4); border-radius: 8px; cursor: pointer; margin: 0 var(--spacing-1); transition: background-color 0.2s ease;">Monitoring</button>
+        </div>
+
+        <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-8);">
+
+            <!-- Project Card 1 -->
+            <div class="project-card" data-category="cicd" style="background-color: var(--color-bg-alt); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://via.placeholder.com/400x200/3B82F6/E5E7EB?text=Project+1" alt="Project 1 Thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: var(--spacing-8); display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="margin-bottom: var(--spacing-2);">CI/CD Pipeline Automation</h3>
+                    <p style="color: var(--color-text-alt); flex-grow: 1;">Designed and implemented a fully automated CI/CD pipeline for a containerized e-commerce application, reducing deployment time from hours to minutes.</p>
+                    <div class="tags" style="margin-top: auto; padding-top: var(--spacing-4); margin-bottom: var(--spacing-4);">
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Jenkins</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Docker</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Kubernetes</span>
+                    </div>
+                    <a href="#" style="font-weight: 700; color: var(--color-primary);">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card" data-category="iac" style="background-color: var(--color-bg-alt); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://via.placeholder.com/400x200/10B981/E5E7EB?text=Project+2" alt="Project 2 Thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: var(--spacing-8); display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="margin-bottom: var(--spacing-2);">Infrastructure as Code</h3>
+                    <p style="color: var(--color-text-alt); flex-grow: 1;">Migrated a manually-managed AWS infrastructure to a fully automated environment using Terraform, improving consistency and reducing human error.</p>
+                    <div class="tags" style="margin-top: auto; padding-top: var(--spacing-4); margin-bottom: var(--spacing-4);">
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Terraform</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">AWS</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">GitLab CI</span>
+                    </div>
+                    <a href="#" style="font-weight: 700; color: var(--color-primary);">View Details &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 (Placeholder) -->
+            <div class="project-card" data-category="monitoring" style="background-color: var(--color-bg-alt); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+                <img src="https://via.placeholder.com/400x200/F59E0B/E5E7EB?text=Project+3" alt="Project 3 Thumbnail" style="width: 100%; height: 200px; object-fit: cover;">
+                <div style="padding: var(--spacing-8); display: flex; flex-direction: column; flex-grow: 1;">
+                    <h3 style="margin-bottom: var(--spacing-2);">Kubernetes Monitoring</h3>
+                    <p style="color: var(--color-text-alt); flex-grow: 1;">Established a comprehensive monitoring and alerting system for a production Kubernetes cluster using Prometheus and Grafana.</p>
+                    <div class="tags" style="margin-top: auto; padding-top: var(--spacing-4); margin-bottom: var(--spacing-4);">
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Prometheus</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Grafana</span>
+                        <span style="background-color: var(--color-border); padding: var(--spacing-1) var(--spacing-2); border-radius: 4px; font-size: 0.875rem;">Kubernetes</span>
+                    </div>
+                    <a href="#" style="font-weight: 700; color: var(--color-primary);">View Details &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certifications" class="section container">
+        <h2 class="section-title">Certifications & Badges</h2>
+        <div class="certifications-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--spacing-12);">
+
+            <div class="certification-card" style="text-align: center;">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/150/3B82F6/E5E7EB?text=AWS+DevOps" alt="AWS Certified DevOps Engineer - Professional" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-border); transition: transform 0.2s ease;">
+                </a>
+                <p style="margin-top: var(--spacing-4); font-weight: 700;">AWS DevOps Engineer</p>
+            </div>
+
+            <div class="certification-card" style="text-align: center;">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/150/10B981/E5E7EB?text=CKA" alt="Certified Kubernetes Administrator" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-border); transition: transform 0.2s ease;">
+                </a>
+                <p style="margin-top: var(--spacing-4); font-weight: 700;">Certified Kubernetes Admin</p>
+            </div>
+
+            <div class="certification-card" style="text-align: center;">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/150/F59E0B/E5E7EB?text=Terraform" alt="HashiCorp Certified: Terraform Associate" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-border); transition: transform 0.2s ease;">
+                </a>
+                <p style="margin-top: var(--spacing-4); font-weight: 700;">Terraform Associate</p>
+            </div>
+
+            <div class="certification-card" style="text-align: center;">
+                <a href="#" target="_blank">
+                    <img src="https://via.placeholder.com/150/EF4444/E5E7EB?text=Azure+DevOps" alt="Azure DevOps Engineer Expert" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid var(--color-border); transition: transform 0.2s ease;">
+                </a>
+                <p style="margin-top: var(--spacing-4); font-weight: 700;">Azure DevOps Expert</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog" class="section container">
+        <h2 class="section-title">From the Blog</h2>
+        <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-8);">
+
+            <!-- Blog Post Card 1 -->
+            <div class="blog-card" style="background-color: var(--color-bg-alt); border-radius: 8px; overflow: hidden; padding: var(--spacing-8);">
+                <p style="font-size: 0.875rem; color: var(--color-text-alt); margin-bottom: var(--spacing-2);">Oct 26, 2023 • 8 min read</p>
+                <h3 style="margin-bottom: var(--spacing-4);">From Clicks to Code: A Guide to Migrating to Terraform</h3>
+                <p style="color: var(--color-text-alt);">A deep dive into the strategy and triumphs of moving a production environment from manual click-ops to a fully automated infrastructure with Terraform.</p>
+                <a href="#" style="font-weight: 700; color: var(--color-primary); margin-top: var(--spacing-4); display: inline-block;">Read More &rarr;</a>
+            </div>
+
+            <!-- Blog Post Card 2 -->
+            <div class="blog-card" style="background-color: var(--color-bg-alt); border-radius: 8px; overflow: hidden; padding: var(--spacing-8);">
+                <p style="font-size: 0.875rem; color: var(--color-text-alt); margin-bottom: var(--spacing-2);">Sep 15, 2023 • 10 min read</p>
+                <h3 style="margin-bottom: var(--spacing-4);">A Practical Guide to Kubernetes Observability</h3>
+                <p style="color: var(--color-text-alt);">Learn how to set up a powerful, open-source monitoring stack for your Kubernetes clusters to gain critical insights into application performance and system health.</p>
+                <a href="#" style="font-weight: 700; color: var(--color-primary); margin-top: var(--spacing-4); display: inline-block;">Read More &rarr;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section container" style="text-align: center;">
+        <h2 class="section-title">Let's Connect</h2>
+        <p style="max-width: 50ch; margin-left: auto; margin-right: auto; margin-bottom: var(--spacing-8);">
+            I'm currently seeking new opportunities and I'm always open to discussing interesting projects. Whether you have a question or just want to say hi, my inbox is always open.
+        </p>
+        <a href="mailto:adityacprtm@gmail.com" style="display: inline-block; background-color: var(--color-primary); color: var(--color-text); padding: var(--spacing-4) var(--spacing-8); border-radius: 8px; text-decoration: none; font-weight: 700; transition: background-color 0.2s ease;">
+            Email Me
+        </a>
+    </section>
+  </main>
+
+  <footer style="background-color: var(--color-bg-alt); padding: var(--spacing-8) 0; text-align: center; margin-top: var(--spacing-12);">
+    <div class="container">
+        <div class="social-links" style="margin-bottom: var(--spacing-4);">
+            <a href="https://github.com/adityacprtm" target="_blank" style="margin: 0 var(--spacing-2);">GitHub</a>
+            <a href="https://linkedin.com/in/adityacprtm" target="_blank" style="margin: 0 var(--spacing-2);">LinkedIn</a>
+        </div>
+        <p style="margin-bottom: 0; color: var(--color-text-alt);">&copy; 2024 Aditya Pratama. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtonsContainer = document.querySelector('.filter-buttons');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtonsContainer.addEventListener('click', (event) => {
+        if (event.target.tagName !== 'BUTTON') return;
+
+        const clickedButton = event.target;
+
+        // Set active button style
+        filterButtonsContainer.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+            btn.style.backgroundColor = 'var(--color-bg-alt)';
+            btn.style.color = 'var(--color-text)';
+        });
+        clickedButton.classList.add('active');
+        clickedButton.style.backgroundColor = 'var(--color-primary)';
+
+        const filter = clickedButton.getAttribute('data-filter');
+
+        // Filter project cards
+        projectCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex'; // Use flex as it's part of the card's style
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

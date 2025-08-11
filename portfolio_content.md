@@ -19,9 +19,9 @@ This document contains the generated sections, layout suggestions, design notes,
 ### Sample Copy:
 > **Headline: DevOps Engineer | Cloud Architect | SRE**
 >
-> Hi, I'm [Your Name], a DevOps professional with a passion for building resilient, scalable, and efficient infrastructure. With over [Number] years of experience, I specialize in automating development pipelines, optimizing cloud environments, and ensuring system reliability.
+> Hi, I'm Aniket Gohel, a DevOps professional with a passion for building resilient, scalable, and efficient infrastructure. With over 2 years of experience, I specialize in automating development pipelines, optimizing cloud environments, and ensuring system reliability.
 >
-> My goal is to empower development teams to ship code faster and more reliably. I have a proven track record of implementing robust CI/CD pipelines, managing cloud infrastructure on [mention cloud providers, e.g., AWS, Azure, GCP], and leveraging tools like Terraform, Kubernetes, and Ansible to streamline operations.
+> My goal is to empower development teams to ship code faster and more reliably. I have a proven track record of implementing robust CI/CD pipelines, managing cloud infrastructure on AWS, Azure, GCP and leveraging tools like Terraform, OpenTofu, Kubernetes, Docker, and Ansible to streamline operations.
 
 ---
 
@@ -45,11 +45,11 @@ This document contains the generated sections, layout suggestions, design notes,
 > **The Problem:** The development team was struggling with a slow, error-prone manual deployment process.
 >
 > **My Solution:**
-> *   I built a multi-stage pipeline using **Jenkins** that automated the entire workflow: building Docker images, running tests, performing security scans with **SonarQube**, and deploying to a **Kubernetes** cluster.
+> *   I built a multi-stage pipeline using **Github Action** that automated the entire workflow: building Docker images, running tests, performing security scans with **Trivy**, and deploying to a **Kubernetes** cluster.
 > *   I containerized the application's microservices using **Docker** for consistent environments.
 > *   The pipeline deployed to **AWS EKS** with separate stages for dev, staging, and production.
 >
-> **Technologies Used:** Jenkins, Docker, Kubernetes (AWS EKS), Helm, SonarQube, GitHub.
+> **Technologies Used:** Github Action, Docker, Kubernetes (AWS EKS), Helm, SonarQube, GitHub.
 
 ---
 
@@ -126,4 +126,4 @@ This document contains the generated sections, layout suggestions, design notes,
 >
 > [ **Get In Touch** ]
 >
-> `your.email@email.com`
+> `aniketgohelp@gmail.com`
